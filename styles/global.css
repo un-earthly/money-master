@@ -1,0 +1,51 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+::selection{
+    color: darkcyan;
+}
+h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+body{
+    height: 100vh;
+}
+input{
+    outline: none;   
+    border: 1px solid cyan;
+    border-radius: 2px;
+    padding: 5px;
+    background-color: transparent;
+    transition: all .5s;
+}
+input:focus{
+    background-color: rgba(0, 255, 255, 0.288);
+}
+.wrapper{
+    background-color: rgb(4, 0, 15);
+    height: 100%;
+}
+.container{
+    width: 80vw;
+    margin: auto;
+    margin-top: 1.7rem;
+    display: flex;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 0, 31);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}

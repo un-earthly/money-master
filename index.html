@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>My Budget Calculator</title>
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+
+        <!-- header -->
+        <header>
+            <h1>Lets Calculate The Budget</h1>
+        </header>
+        <!-- container  -->
+        <div class="container">
+
+            <!-- left side -->
+            <div class="left">
+                <img src="https://images.unsplash.com/photo-1561241906-318f9ea25ab6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=727&q=80"
+                    alt="">
+            </div>
+            <!-- left side ends -->
+
+            <!-- right side  -->
+            <div class="right">
+                <section class="income__section">
+                    <h1>Income</h1>
+                    <div class="form">
+                        <label for="income">Income :</label>
+                        <input type="text" id="income">
+                    </div>
+                </section>
+
+                <!-- right side ends -->
+
+
+                <!-- expense section  -->
+                <section class="expense__section">
+                    <h1>Expenses</h1>
+                    <div class="form">
+                        <div class="food field">
+
+                            <label for="income">Food :</label>
+                            <input type="text" id="income">
+                        </div>
+                        <div class="rent field">
+
+                            <label for="income">Rent :</label>
+                            <input type="text" id="income">
+                        </div>
+                        <div class="clothes field">
+                            <label for="income">Clothes :</label>
+                            <input type="text" id="income">
+                        </div>
+                    </div>
+                    <button class="btn" id="calculate">Calculate</button>
+
+                    <h3>Total Expenses:<span id="expenseTotal">5500 </span>$</h3>
+                    <h3>Balance:<span id="balanceLeft">5500 </span>$</h3>
+                </section>
+
+                <!-- expense section ends  -->
+
+
+                <!-- balance section  -->
+                    <div class="form">
+                        <label for="save">Save :</label>
+                        <input type="text" id="save">
+                        <span class="percent">&percnt;</span>
+                        <button class="btn" style="display: inline;">Save</button>
+                        <h3>Saving Amount: <span id="savings">00</span>$</h3>
+                        <h3>Remaining Amount: <span id="remaining">00</span>$</h3>
+                    </div>
+                <!-- balance section ends  -->
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
