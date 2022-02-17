@@ -67,6 +67,8 @@
                             <label for="clothes">Clothes :</label>
                             <input type="number" placeholder="Cost Of Clothings" id="clothes">
                         </div>
+                        <span class="error-text" id="expense-error">expense cant be more than income</span>
+                        <sapn class="error-text" id="noInput-error">Cant Leave Those fields Blank</sapn>
                     </div>
                     <button class="btn" id="calculate" onclick="calculate()">Calculate</button>
 
@@ -86,7 +88,7 @@
                     <h4>Saving Amount: <span id="savings">00</span>$</h4>
                     <h4>Remaining Amount: <span id="remaining">00</span>$</h4>
                     <p class="error-text" id="savingsError">
-                        Please Enter A Valid Number
+                        Please Enter A Valid Amount
                     </p>
                 </div>
                 <!-- balance section ends  -->
