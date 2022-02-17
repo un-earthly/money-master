@@ -34,7 +34,10 @@
                     <h1>Income</h1>
                     <div class="form">
                         <label for="income">Income :</label>
-                        <input type="text" id="income">
+                        <input type="text" placeholder="Your Total Income" id="income">
+                        <p class="error-text" id="error-text">
+                            Please Enter A Valid Income Amount
+                        </p>
                     </div>
                 </section>
 
@@ -48,16 +51,25 @@
                         <div class="food field">
 
                             <label for="food">Food :</label>
-                            <input type="text" id="food">
+                            <input type="text" placeholder="Cost Of Food" id="food">
+                            <p class="error-text" id="foodError">
+                                Please Enter A Valid Food Expense Amount 
+                            </p>
                         </div>
                         <div class="rent field">
 
                             <label for="rent">Rent :</label>
-                            <input type="text" id="rent">
+                            <input type="text" placeholder="Amount Of Rent" id="rent">
+                            <p class="error-text" id="rentError">
+                                Please Enter A Valid Number
+                            </p>
                         </div>
                         <div class="clothes field">
                             <label for="clothes">Clothes :</label>
-                            <input type="text" id="clothes">
+                            <input type="text" placeholder="Cost Of Clothings" id="clothes">
+                            <p class="error-text" id="clothsError">
+                                Please Enter A Valid Number
+                            </p>
                         </div>
                     </div>
                     <button class="btn" id="calculate" onclick="calculate()">Calculate</button>
@@ -72,11 +84,14 @@
                 <!-- balance section  -->
                     <div class="form">
                         <label for="save">Save :</label>
-                        <input type="text" id="save">
+                        <input type="text" placeholder="?Percent Of Savings" id="save">
                         <span class="percent">&percnt;</span>
-                        <button class="btn" style="display: inline;">Save</button>
+                        <button class="btn" style="display: inline;" onclick="savings()">Save</button>
                         <h3>Saving Amount: <span id="savings">00</span>$</h3>
                         <h3>Remaining Amount: <span id="remaining">00</span>$</h3>
+                        <p class="error-text" id="savingsError">
+                            Please Enter A Valid Number
+                        </p>
                     </div>
                 <!-- balance section ends  -->
             </div>
