@@ -36,12 +36,12 @@ function getVariable(id) {
 
 // this function is for savings button
 function savings() {
-    const balanceLeft = parseInt(getVariable('balanceLeft').innerText)
-    const savingsAmount = balanceLeft * (getInput('save') / 100);
+    const incomeInput = getInput('income');
+    const savingsAmount = incomeInput * (getInput('save') / 100);
     //validation
-    if (savingsAmount <= balanceLeft && savingsAmount > 0) {
+    if (savingsAmount <= incomeInput && savingsAmount > 0) {
         getVariable('savings').innerText = savingsAmount;
-        getVariable('remaining').innerText = balanceLeft - savingsAmount;
+        getVariable('remaining').innerText = incomeInput - savingsAmount;
         getVariable('savingsError').style.display = 'none'
     } else {
         getVariable('savingsError').style.display = 'block'
