@@ -22,14 +22,15 @@
         <div class="container">
 
             <!-- left side -->
-            <div class="left">
+            <!-- resp class is for responsiveness -->
+            <div class="left resp">
                 <img src="https://images.unsplash.com/photo-1561241906-318f9ea25ab6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=727&q=80"
                     alt="">
             </div>
             <!-- left side ends -->
 
             <!-- right side  -->
-            <div class="right">
+            <div class="right resp">
                 <section class="income__section">
                     <h4>Income</h4>
                     <div class="form">
@@ -63,8 +64,8 @@
                     </div>
                     <button class="btn" id="calculate" onclick="calculate()">Calculate</button>
 
-                    <h3>Total Expenses:<span id="expenseTotal">5500 </span>$</h3>
-                    <h3>Balance:<span id="balanceLeft">5500 </span>$</h3>
+                    <h4>Total Expenses:<span id="expenseTotal">5500 </span>$</h4>
+                    <h4>Balance:<span id="balanceLeft">5500 </span>$</h4>
                 </section>
 
                 <!-- expense section ends  -->
@@ -76,8 +77,8 @@
                     <input type="text" placeholder="?Percent Of Savings" id="save">
                     <span class="percent">&percnt;</span>
                     <button class="btn" style="display: inline;" onclick="savings()">Save</button>
-                    <h3>Saving Amount: <span id="savings">00</span>$</h3>
-                    <h3>Remaining Amount: <span id="remaining">00</span>$</h3>
+                    <h4>Saving Amount: <span id="savings">00</span>$</h4>
+                    <h4>Remaining Amount: <span id="remaining">00</span>$</h4>
                     <p class="error-text" id="savingsError">
                         Please Enter A Valid Number
                     </p>
