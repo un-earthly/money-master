@@ -1,4 +1,6 @@
 /* css reset */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -14,13 +16,18 @@ h1,h2,h3,h4{
     text-align: center;
 }
 
+
 /* css reset ends  */
+
+
 /* body styling  */
+
 body{
     height: 100vh;
 }
 
 /* input fields stylin */
+
 input{
     outline: none;
     border-radius: 2px;
@@ -34,12 +41,15 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
 /* wrapper styling  */
+
 .wrapper{
     height: 100%;
 }
 
 /* container styling  */
+
 .container{
     width: 80vw;
     margin: auto;
@@ -48,6 +58,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* button  */
+
 .btn{
     display: flex;
     align-items: center;

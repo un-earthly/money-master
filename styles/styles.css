@@ -7,12 +7,16 @@
 
 
 /* styles  */
+
+
 /* heading style */
 header h1{
     padding: 1rem ;
 }
 
 /* container items style  */
+
+
 
 /* left section  */
 .left{
@@ -24,7 +28,11 @@ header h1{
     height: 100%;
     object-fit: contain;
 } 
+
+
 /* right section  */
+
+
 .right{
     width: 40%;
     height: 600px;

@@ -7,7 +7,11 @@ function calculate() {
     const clothes = getInput('clothes');
     const incomeInput = getInput('income');
     const expenseTotal = food + clothes + rent;
+
+
     // validation and setting innertext 
+
+    
     if (isNaN(incomeInput) == false && incomeInput > 0) {
         if (expenseTotal > incomeInput) {
             alert('not Enough to spend')
@@ -20,6 +24,8 @@ function calculate() {
     }
 
 }
+
+
 // this function is for gettting input and its value
 function getInput(id) {
     const inputValue = document.getElementById(id);
