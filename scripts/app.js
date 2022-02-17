@@ -1,23 +1,24 @@
 function calculate() {
     const icomeErrorText = getVariable('error-text');
-    const foodError = getVariable('foodError');
-    const clothsError = getVariable('clothsError');
-    const rentError = getVariable('rentError');
     const expenseTotalSpan = getVariable('expenseTotal');
     const balanceLeft = getVariable('balanceLeft');
     const food = getInput('food');
     const rent = getInput('rent');
     const clothes = getInput('clothes');
-    const expenseTotal = food + clothes + rent;
     const incomeInput = getInput('income');
+    const expenseTotal = food + clothes + rent;
+
     if (isNaN(incomeInput) == false && incomeInput > 0) {
         expenseTotalSpan.innerText = expenseTotal;
-        balanceLeft.innerText = incomeInput - expenseTotal;
+        if (expenseTotal > incomeInput) {
+            alert('not Enough to spend')
+        } else {
+            balanceLeft.innerText = incomeInput - expenseTotal;
+        }
     } else {
         icomeErrorText.style.display = 'block';
     }
 
-    // savings(balanceLeft.innerText);
 }
 // this function is for gettting input and its value
 function getInput(id) {
