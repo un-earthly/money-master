@@ -7,13 +7,15 @@ function calculate() {
     const clothes = getInput('clothes');
     const incomeInput = getInput('income');
     const expenseTotal = food + clothes + rent;
-
+    // validation and setting innertext 
     if (isNaN(incomeInput) == false && incomeInput > 0) {
-        expenseTotalSpan.innerText = expenseTotal;
         if (expenseTotal > incomeInput) {
             alert('not Enough to spend')
-        } else {
+        } else if(expenseTotal >= 0){
+            expenseTotalSpan.innerText = expenseTotal;
             balanceLeft.innerText = incomeInput - expenseTotal;
+        }else{
+            // console.log(expenseTotal)
         }
     } else {
         icomeErrorText.style.display = 'block';
@@ -34,13 +36,13 @@ function getVariable(id) {
     return field;
 }
 
-// this function is for saving button
+// this function is for savings button
 function savings() {
     const balanceLeft = parseInt(getVariable('balanceLeft').innerText)
     const savingsAmount = balanceLeft * (getInput('save') / 100);
-    getVariable('savings').innerText = savingsAmount;
     //validation
-    if (savingsAmount <= balanceLeft) {
+    if (savingsAmount <= balanceLeft && savingsAmount > 0) {
+        getVariable('savings').innerText = savingsAmount;
         getVariable('remaining').innerText = balanceLeft - savingsAmount;
         getVariable('savingsError').style.display = 'none'
     } else {
