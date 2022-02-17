@@ -11,11 +11,9 @@ function calculate() {
     if (isNaN(incomeInput) == false && incomeInput > 0) {
         if (expenseTotal > incomeInput) {
             alert('not Enough to spend')
-        } else if(expenseTotal >= 0){
+        } else if (expenseTotal >= 0) {
             expenseTotalSpan.innerText = expenseTotal;
             balanceLeft.innerText = incomeInput - expenseTotal;
-        }else{
-            // console.log(expenseTotal)
         }
     } else {
         icomeErrorText.style.display = 'block';

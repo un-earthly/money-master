@@ -47,3 +47,12 @@ header h1{
 .form{
     text-align: right;
 }
+.field{
+    margin: 10px;
+}
+#save{
+    width: 35%;
+}
+#calculate{
+    width: 100%;
+}

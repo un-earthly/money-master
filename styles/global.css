@@ -60,19 +60,12 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
+/* error-text */
 
-.field{
-    margin: 10px;
-}
 .error-text{
     margin: 10px 0;
     color: red;
     display: none;
     text-align: center;
 }
-#save{
-    width: 35%;
-}
-#calculate{
-    width: 100%;
-}
+
